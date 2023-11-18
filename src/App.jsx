@@ -1,33 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Outlet } from 'react-router-dom'
+import { mode } from '@chakra-ui/theme-tools'
+import { ChakraProvider, ColorModeScript, extendTheme } from '@chakra-ui/react'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
+// adding global styles
+const styles = {
+	global: (props) => ({
+		body: {
+			color: mode('gray.900', 'whiteAlpha.900')(props),
+			bg: mode('gray.200', '#000000')(props)
+		}
+	})
+}
+
+// setting default color scheme to dark
+const config = {
+	initialColorMode: 'dark',
+	useSystemColorMode: true
+}
+
+// adding colors in theme
+const colors = {
+	lightGray: '#EDEDE9',
+	beige: '#D6CCC2',
+	tan: '#F5EBE0',
+	darkTan: '#E3D5CA',
+	lightBrown: '#D5BDAF'
+}
+
+const theme = extendTheme({ config, styles, colors })
+
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <ChakraProvider theme={theme}>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+        <Navbar />
+          <Outlet />
+        <Footer />
+    </ChakraProvider>
     </>
   )
 }

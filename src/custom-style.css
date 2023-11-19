@@ -1,0 +1,20 @@
+.hero {
+    margin: 0;
+    padding: 0;
+    background-image: url('../public/images/tan-bricks.jpg'), linear-gradient(rgba(0,1,0,0.1), rgba(0,0,0,0.4));
+    background-blend-mode:color-dodge;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ h2 {   
+    font-family: serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 254, 0.77);
+}

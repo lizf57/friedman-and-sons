@@ -1,9 +1,18 @@
-import React from 'react'
+import '../custom-style.css'
+import {Box} from '@chakra-ui/react'
 
 const Home = () => {
   return (
     <>
-    Home
+      <Box fontSize={'xxx-large'}> 
+
+      <div className="hero">
+
+      <h2 className="hero">Elevate your home, love where you live.</h2>
+
+      </div>
+      
+      </Box>
     </>
   )
 

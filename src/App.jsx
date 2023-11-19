@@ -2,15 +2,15 @@ import { Outlet } from 'react-router-dom'
 import { mode } from '@chakra-ui/theme-tools'
 import { ChakraProvider, ColorModeScript, extendTheme } from '@chakra-ui/react'
 
-import Navbar from './components/Navbar'
+import Header from './components/Header'
 import Footer from './components/Footer'
 
 // adding global styles
 const styles = {
 	global: (props) => ({
 		body: {
-			color: mode('gray.900', 'whiteAlpha.900')(props),
-			bg: mode('gray.200', '#000000')(props)
+			color: mode('white', 'whiteAlpha.900')(props),
+			bg: mode('gray.100', 'gray.900')(props)
 		}
 	})
 }
@@ -37,7 +37,8 @@ const App = () => {
     <>
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-        <Navbar />
+
+        <Header />
           <Outlet />
         <Footer />
     </ChakraProvider>

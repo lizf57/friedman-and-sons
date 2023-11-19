@@ -1,4 +1,4 @@
-import { Card, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, ButtonGroup, Button, Wrap } from '@chakra-ui/react'
+import { Card, CardBody, Image, Stack, Heading, Text, Divider, Wrap } from '@chakra-ui/react'
 const Careers = () => {
     return (
         <Wrap m={5}>

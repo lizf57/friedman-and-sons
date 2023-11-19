@@ -9,7 +9,6 @@ import Contact from './components/Contact.jsx'
 import Home from './components/Home.jsx'
 import About from './Pages/About.jsx'
 import Careers from './Pages/Careers.jsx'
-import Developers from './Pages/Developers.jsx'
 import ErrorPage from './components/Error.jsx'
 import Exterior from './Pages/Exterior.jsx'
 import Interior from './Pages/Interior.jsx'
@@ -38,10 +37,6 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />
-      },
-      {
-        path: 'developers',
-        element: <Developers />
       },
       {
         path: 'careers',

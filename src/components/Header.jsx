@@ -1,5 +1,5 @@
 import React from 'react'
-import { Breadcrumb, BreadcrumbItem, Flex, Link, Image, Text, useColorMode, Button, Box } from '@chakra-ui/react'
+import { Breadcrumb, BreadcrumbItem, Flex, Link, Image, Text, useColorMode, Button, Box} from '@chakra-ui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
@@ -66,13 +66,18 @@ const Header = () => {
 
           {/* light and dark mode */}
           <Flex align={'center'}>
-            <BreadcrumbItem m={10}>
+            
+            <BreadcrumbItem m={10} gap={5}>
+
               <Flex>
                 {colorMode === 'dark' ?
                   <FontAwesomeIcon m={8} icon={faSun} style={{ color: 'white' }} size={'lg'} cursor={'pointer'} onClick={toggleColorMode} /> : <FontAwesomeIcon m={8} icon={faMoon} style={{ color: 'black' }} size={'lg'} cursor={'pointer'} onClick={toggleColorMode} />}
               </Flex>
+
             </BreadcrumbItem>
           </Flex>
+
+         
         </Breadcrumb>
       </Flex>
     </>

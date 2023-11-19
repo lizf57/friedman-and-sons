@@ -4,7 +4,7 @@ import {Box} from '@chakra-ui/react'
 const Home = () => {
   return (
     <>
-      <Box fontSize={'xxx-large'}> 
+      <Box fontSize={'xx-large'} fontWeight={'bold'}> 
 
       <div className="hero">
 

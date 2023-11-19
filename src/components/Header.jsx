@@ -1,5 +1,5 @@
 import React from 'react'
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, Flex, Link, Image, Text, useColorMode, Button, Box } from '@chakra-ui/react'
+import { Breadcrumb, BreadcrumbItem, Flex, Link, Image, Text, useColorMode, Button, Box } from '@chakra-ui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
@@ -34,15 +34,16 @@ const Header = () => {
             <Text fontSize={'xxx-large'} m={0} textShadow={'1px 1px 1px black'} fontFamily={'serif'}>
               <h1> Friedman & Sons, LLC </h1>
             </Text>
-        
 
           <Box flex={1} />
 
-          {/* services link */}
+          {/* services button */}
           <Button
             onClick={handleToggleServices}
             bg={'lightBrown'}
-            m={4}
+            m={1}
+            pl={9}
+            pr={9}
           >
             Services
           </Button>

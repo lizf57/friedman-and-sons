@@ -6,7 +6,6 @@ import './custom-style.css'
 
 import App from './App.jsx'
 import Contact from './components/Contact.jsx'
-import Services from './components/Services.jsx'
 import Home from './components/Home.jsx'
 import About from './Pages/About.jsx'
 import Careers from './Pages/Careers.jsx'
@@ -31,10 +30,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
-      },
-      {
-        path: 'services',
-        element: <Services />
       },
       {
         path: 'contact',

@@ -1,7 +1,7 @@
 .hero {
     margin: 0;
     padding: 0;
-    background-image: url('../public/images/tan-bricks.jpg'), linear-gradient(rgba(0,1,0,0.1), rgba(0,0,0,0.4));
+    background-image: url('/images/tan-bricks.jpg'), linear-gradient(rgba(0,1,0,0.1), rgba(0,0,0,0.4));
     background-blend-mode:color-dodge;
     background-repeat: no-repeat;
     background-position: bottom;

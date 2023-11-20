@@ -1,5 +1,5 @@
 import React from 'react'
-import { Breadcrumb, BreadcrumbItem, Flex, Link, Image, Text, useColorMode, Button, Box} from '@chakra-ui/react'
+import { Breadcrumb, BreadcrumbItem, Flex, Link, Image, Text, useColorMode, Button, Box, Divider} from '@chakra-ui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
@@ -41,6 +41,8 @@ const Header = () => {
           <Button
             onClick={handleToggleServices}
             bg={'lightBrown'}
+            border={'1px'}
+            borderColor={'lightGray'}
             m={1}
             pl={9}
             pr={9}
@@ -57,9 +59,12 @@ const Header = () => {
               p={4}
               rounded={10}
               fontSize={'md'}
+              gap={'5px'}
             >
               <Link href='homes'>Homes</Link>
+              <Divider borderColor={'white'} />
               <Link href='interior'>Interior</Link>
+              <Divider borderColor={'white'} />
               <Link href='exterior'>Exterior</Link>
             </Flex>
           )}

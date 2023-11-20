@@ -18,13 +18,13 @@ const Footer = () => {
             <FontAwesomeIcon icon={faFacebook} size={'lg'} cursor={'pointer'} />
           </Link>
           <Link href='https://linkedin.com' mx={8} target='_blank'>
-            <FontAwesomeIcon icon={faLinkedin} size={'lg'} cursor={'pointer'} />
+            <FontAwesomeIcon icon={faLinkedin} size={'lg'} cursor={'pointer'}/>
           </Link>
         </Flex>
 
         <Flex justifyContent={'center'} w={'full'}>
 
-          <Text my={7}>&copy; 2023 Friedman & Sons, LLC. All rights reserved.</Text>
+          <Text my={7} fontSize={'small'}>&copy; 2023 Friedman & Sons, LLC. All rights reserved.</Text>
         </Flex>
 
       </Stack>

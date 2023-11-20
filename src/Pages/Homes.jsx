@@ -12,7 +12,7 @@ const Homes = () => {
             <Text>Looking for a contractor to build your next home? </Text>
           </CardBody>
           <CardFooter>
-            <Button bg={'beige'} color={'gray.600'}><Link href='homes-info'>More info </Link></Button>
+            <Button border={'1px'} borderColor={'beige'}><Link href='homes-info'>More info </Link></Button>
           </CardFooter>
         </Card>
         <Box>
@@ -33,7 +33,7 @@ const Homes = () => {
             <Text>View photographs from past projects.</Text>
           </CardBody>
           <CardFooter>
-            <Button bg={'beige'} color={'gray.600'} >
+            <Button borderColor={'beige'} border={'1px'} >
               <Link href='homes-photo-gallery'>View photos </Link></Button>
           </CardFooter>
         </Card>
@@ -57,7 +57,7 @@ const Homes = () => {
             <Text>Let's discuss project ideas & get the best price for you.</Text>
           </CardBody>
           <CardFooter>
-            <Button bg={'beige'} color={'gray.600'}><Link href='contact'>Get an estimate. </Link></Button>
+            <Button borderColor={'beige'} border={'1px'}><Link href='contact'>Get an estimate. </Link></Button>
           </CardFooter>
         </Card>
 

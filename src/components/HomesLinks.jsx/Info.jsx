@@ -1,4 +1,4 @@
-import { Tabs, Tab, TabList, TabPanels, TabPanel, TabIndicator } from '@chakra-ui/react'
+import { Tabs, Tab, TabList, TabPanels, TabPanel, TabIndicator, Divider } from '@chakra-ui/react'
 
 
 const info = () => {
@@ -16,6 +16,7 @@ const info = () => {
           height="2px"
           borderRadius="1px"
         />
+        <Divider borderColor={'lightBrown'} />
         <TabPanels color={'lightBrown'}>
           <TabPanel>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et assumenda molestias ex autem quasi, ea doloribus nostrum adipisci nulla, quos laborum temporibus quaerat error saepe. Aspernatur aut itaque laborum delectus.!</p>

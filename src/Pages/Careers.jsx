@@ -1,7 +1,7 @@
 import { Card, CardBody, Image, Stack, Heading, Text, Divider, Wrap } from '@chakra-ui/react'
 const Careers = () => {
     return (
-        <Wrap m={5}>
+        <Wrap m={5} display={'flexclear'} justifyContent={'center'}>
 
             <Card maxW='md'>
                 <CardBody>
